@@ -1,0 +1,10 @@
+.text {
+     font-size: 15px;
+     font-weight: 300;
+     padding: 10px;
+     text-align: center;
+ }
+
+.textRow:nth-child(2n) {
+    background: #ecf2f3;
+}
