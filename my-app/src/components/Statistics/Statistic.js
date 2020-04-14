@@ -10,9 +10,7 @@ class Statistic extends React.Component {
             <section className={ styles.statistics }>
                 { title ? (
                     <h2 className={ styles.title }>{ title }</h2>
-                ) : (
-                    ''
-                ) }
+                ) : ('') }
                 <ul className={ styles.list }>
                     { stats.map( stat => (
                         <StatisticItem stat={ stat } key={ stat.id }/>

@@ -5,7 +5,7 @@ import styles    from "./StatisticItem.module.css";
 class StatisticItem extends React.Component {
     render() {
         let {stat} = this.props;
-        const randColor = () => "HSL(" + 860 * Math.random() + ',' + (35 + 95 * Math.random()) + '%,' + (70 + 20 * Math.random()) + '%)';
+        const randColor = () => "HSL(" + 360 * Math.random() + ',' + (30 + 80 * Math.random()) + '%,' + (40 + 80 * Math.random()) + '%)';
 
         return (
             <li style={{backgroundColor: randColor()}} className={styles.item}>
