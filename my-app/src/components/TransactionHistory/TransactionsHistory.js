@@ -1,6 +1,6 @@
-import React                  from 'react';
-import PropTypes              from 'prop-types';
-import styles                 from './TransactionsHistory.module.css';
+import React from 'react';
+import PropTypes from 'prop-types';
+import styles from './TransactionsHistory.module.css';
 import TransactionsHistoryRow from "./TransactionsHistoryRow";
 
 const TransactionsHistory = ({transactions}) => (
@@ -13,15 +13,14 @@ const TransactionsHistory = ({transactions}) => (
         </tr>
         </thead>
         <tbody>
-        {transactions.map(transaction => (
-            <TransactionsHistoryRow transaction={transaction} key={transaction.id}/>
-        ))}
+        {transactions.map(transaction =>
+            <TransactionsHistoryRow transaction={transaction} key={transaction.id}/>)})
         </tbody>
     </table>
 );
 
 TransactionsHistory.propTypes = {
-    transactions:PropTypes.array.isRequired,
+    transactions : PropTypes.arrayOf (PropTypes.object).isRequired
 };
 
 export default TransactionsHistory;

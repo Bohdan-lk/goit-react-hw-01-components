@@ -1,6 +1,6 @@
-import React               from 'react';
+import React from 'react';
 import PropTypes, {string} from 'prop-types';
-import styles              from "./TransactionsHistoryRow.module.css";
+import styles from "./TransactionsHistoryRow.module.css";
 
 const TransactionsHistoryRow = ({transaction}) => (
     <tr className={styles.textRow}>
@@ -11,10 +11,10 @@ const TransactionsHistoryRow = ({transaction}) => (
 );
 
 TransactionsHistoryRow.propTypes = {
-    transaction: PropTypes.shape({
-        type: string.isRequired,
-        amount: PropTypes.string.isRequired,
-        currency: PropTypes.string.isRequired,
+    transaction : PropTypes.shape ({
+        type : string.isRequired,
+        amount : PropTypes.string.isRequired,
+        currency : PropTypes.string.isRequired,
     }).isRequired
 };
 
